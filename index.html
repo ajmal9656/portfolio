@@ -61,7 +61,7 @@
       <!--Background Start-->
       <div>
         <div class="background">
-          <img src="images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg" class="img-fluid" />
+          <img src="images/david-schultz-SrewPUfo2c0-unsplash.jpg" class="img-fluid" />
         </div>
 
         <div class="heading-content text-center">
@@ -378,13 +378,14 @@
             required
           />
         </div>
+        <div id="one"></div>
         <div class="mb-3">
-          <label for="lname" class="form-label">Email address:</label>
+          <label for="email" class="form-label">Email address:</label>
           <input
             type="email"
             class="form-control"
             name="email"
-            id="lname"
+            id="email"
             aria-describedby="emailHelp"
             required
           />
@@ -392,13 +393,14 @@
             We'll never share your email with anyone else.
           </div>
         </div>
+        <div id="two"></div>
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label"
             >Your Message:</label
           >
           <textarea
             name="your message"
-            id=""
+            id="textarea"
             cols="30"
             rows="2"
             class="form-control"
@@ -406,7 +408,8 @@
           >
           </textarea>
         </div>
-        <button type="submit" class="btn btn-dark" onclick="ret">Submit</button>
+        <div id="error"></div>
+        <button type="submit" class="btn btn-dark" onclick="validateForm()">Submit</button>
       </form>
     </div>
     <hr />
@@ -444,7 +447,7 @@
             </a>
           </li>
           <li>
-            <a href=""
+            <a href="https://instagram.com/_ajm4l._?igshid=MTNiYzNiMzkwZA=="
               ><svg
                 aria-hidden="true"
                 class="valign-middle absoluteCenter"
@@ -533,6 +536,7 @@
         <p>&copy; 2023 Muhammed Ajmal S</p>
       </div>
     </footer>
+    <script src="validation.js"></script>
     <script src="bootstrap.bundle.js"></script>
   </body>
 </html>
