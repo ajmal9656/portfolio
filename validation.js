@@ -20,6 +20,7 @@ function validateForm() {
   }
 
   var emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
   if (!emailRegex.test(email)) {
     document.getElementById("two").innerHTML = "Enter a valid email address";
     setTimeout(function () {
